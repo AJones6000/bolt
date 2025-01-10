@@ -1,0 +1,25 @@
+//Programmer: Alex Jones
+//Date: 1.8.2025
+//Program: Hello World
+//Hardware: Bolt #SB-F28B
+async function startProgram() {
+
+	setMainLed({ r: 255, g: 105, b: 180 });
+
+	await speak("Hello Square", true);
+
+	await delay(1);
+
+	for (var _i1 = 0; _i1 < 4; _i1++) {
+
+		setMainLed(getRandomColor());
+
+		await Sound.Game.Coin.play(true);
+
+		await roll((getHeading() + 90), 60, 1);
+
+		await delay(1);
+
+	}
+
+}
