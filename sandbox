@@ -1,0 +1,25 @@
+async function startProgram() {
+  // Function to move forward
+  async function moveForward(distanceInInches) {
+    const speed = 50; // Speed of the robot (0-255)
+    const heading = 0; // Forward direction (0 degrees)
+
+    // Calculate duration (adjust based on your Sphero's calibration)
+    const duration = distanceInInches * 1; // Approximation: 10ms per inch
+    await roll(heading, speed, duration);
+    await delay(500); // Short delay to stabilize after movement
+  }
+	  // Main sequence of actions
+  await moveForward(10); // Move forward 40 inches
+  await roll(90,60,1);
+  await moveForward(9);  // Move forward 9 inches
+}
+
+  // Function to turn right
+  async function turnRight() {
+    const newHeading = 90; // Set heading to 90 degrees
+    const speed = 0; // No movement during the turn
+
+    await roll(newHeading, speed, 0); // Set heading (no motion)
+    await delay(1000); // Pause to allow turn completion
+  }
