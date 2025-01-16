@@ -1,3 +1,4 @@
+
 //Team Members: Robert Tanase and Alex Jones
 //Date: 1.14.2025
 //Program: Pre-Competition
@@ -27,7 +28,9 @@ async function startProgram() {
 //Forward and turn 90 degrees and forward
 //Driver: Robert Tanase
 //Navigator: Alex Jones
-
+	await roll(90, 50, 2);
+	await spin(90, 1);
+	await roll(180, 50, 2)
 
 
 
