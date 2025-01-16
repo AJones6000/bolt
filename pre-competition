@@ -1,31 +1,50 @@
-//Programmer: Alex Jones & Robert
-//Date: 1.8.2025
-//Program: Hello World
+//Team Members: Robert Tanase and Alex Jones
+//Date: 1.14.2025
+//Program: Pre-Competition
 //Hardware: Bolt #SB-F28B
 
-//start
-//bolt will say Start across the LED'S
-//Driver: Robert
-//navigator: Alex
+//begin program
+async function startProgram() {
+
+//Start and Say Start
+//Bolt will say Start across the LED's and Say start out loud
+//Driver: Robert Tanase
+//Navigator: Alex Jones
+
+	await speak("Start", true);
 
 
+  // Display a message on the LED matrix
+     //await setDisplayText('Start', {r: 255, g: 0, b: 0 }, 0
+	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true)
 
 
 
 //Red
-//bolts LED will turn Red
-//Driver: Alex
-//navigator:robert
+//Bolts LED will turn Red
+//Driver: Alex Jones
+//Navigator: Robert Tanase
 
 
-//forward & turn 90 degrees and forward
-//Driver: Robert
-//navigator: Alex
 
+
+
+//Forward and turn 90 degrees and forward
+//Driver: Robert Tanase
+//Navigator: Alex Jones
 
 
 
 
 //Play Sound
-//Driver: Alex
-//navigator:robert
+//Driver: Alex Jones
+//Navigator: Robert Tanase
+
+//Figure 8
+//Driver: Robert
+//Navigator: Alex
+
+
+//Star
+//Driver: Alex Jones
+//Navigator: Robert Tanase
