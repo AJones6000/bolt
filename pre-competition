@@ -1,3 +1,4 @@
+
 //Team Members: Robert Tanase and Alex Jones
 //Date: 1.14.2025
 //Program: Pre-Competition
@@ -35,10 +36,40 @@ async function startProgram() {
 //Play Sound
 //Driver: Alex Jones
 //Navigator: Robert Tanase
-	await Sound.Game.Coin.play(true)
+	await Sound.Game.Coin.play(true);
 //Figure 8
 //Driver: Robert
 //Navigator: Alex
+
+	await roll(0, 40, 1);
+	await delay (1);
+	await spin(90, 1);
+	await delay (1);
+	await roll(90, 40, 1);
+	await delay (1);
+	await spin(90, 1);
+	await delay (1);
+	await roll(180, 40, 1);
+	await delay (1);
+	await spin(90, 1);
+	await delay (1);
+	await roll(270, 40, 1);
+	await delay (1);
+	await spin(-90, 1);
+	await delay (1);
+	await roll(180, 40, 1);
+	await delay (1);
+	await spin(-90, 1);
+	await delay (1);
+	await roll(90, 40, 1);
+	await delay (1);
+	await spin(-90, 1);
+	await delay (1);
+	await roll(0, 40, 1);
+	await delay (1);
+	await spin(-90, 1);
+	await delay (1);
+	await roll(-90, 40, 1)
 
 
 //Star
