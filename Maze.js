@@ -11,8 +11,8 @@ async function startProgram() {
 //Driver: Alex Jones
 //Navigator: Robert Tanase
 
-
-
+	await speak("Start", true);
+	await scrollMatrixText('start', { r: 66, g: 56, b: 255 }, 30, true);
 
 //Green Checkpoint
 //LED's turn Green
