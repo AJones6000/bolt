@@ -10,17 +10,18 @@ async function startProgram() {
 //Bolt will say Start across the LED's and Say start out loud
 //Driver: Alex Jones
 //Navigator: Robert Tanase
-
+/*
 	await speak("Start", true);
 	await scrollMatrixText('start', { r: 66, g: 56, b: 255 }, 30, true);
-
+*/
 //Green Checkpoint
 //LED's turn Green
 //Driver: Robert Tanase
 //Navigator: Alex Jones
-
-
-
+	await delay(1);
+	await roll((getHeading() + 0), 65, 2);
+	await delay(1);
+	setMainLed({ r: 0, g: 255, b: 0 });
 
 //Sound #1 Checkpoint
 //Bolt makes sound of choice - Update Sound
