@@ -19,7 +19,7 @@ async function startProgram() {
 //Driver: Robert Tanase
 //Navigator: Alex Jones
 	await delay(1);
-	await roll((getHeading() + 0), 25, 7);
+	await roll((getHeading() + 0), 25, 7.5);
 	await delay(1);
 	setMainLed({ r: 0, g: 255, b: 0 });
 
@@ -37,8 +37,9 @@ async function startProgram() {
 //LED's turn Red
 //Driver: Robert Tanase
 //Navigator: Alex Jones
-
-
+ 	await spin(45, 1);
+	await roll((getHeading() + 0), 25, 3.5);
+	setMainLed({ r: 255, g: 0, b: 0 });
 
 
 //Sound #2 Checkpoint
