@@ -42,7 +42,7 @@ async function startProgram() {
 //LED's turn Red
 //Driver: Robert Tanase
 //Navigator: Alex Jones
- 	await spin(45, 1);
+ 	await spin(40, 1);
 	await delay(1);
 	await roll((getHeading() + 0), 25, 2.5);
 	await delay(1);
