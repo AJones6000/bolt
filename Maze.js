@@ -118,7 +118,12 @@ async function startProgram() {
 //Navigator: Robert Tanase
 
 
-
+await delay(1);
+await spin(45, 1);
+await delay(1);
+await roll((getHeading() + 0), 40, 2.5);
+await speak("Finished", true);
+await scrollMatrixText('finished', { r: 66, g: 56, b: 255 }, 30, true);
 
 
 //End Program
